@@ -8,13 +8,17 @@
       }
     </style>
     <script>
-      while(true)
+      function resizeScreen() {
+        resizeTo(500,500);
+      }
+      function moveScreen() {
         moveTo(Math.random() * screen.width, Math.random() * screen.height);
+      }
     </script>
   </head>
   <body>
-    <header>
-      <h1>Magic</h1>
-    </header>
+    <a href="" onclick="resizeScreen();">Resize Screen</a>
+    <br>
+    <a href="" onclick="moveScreen();">Move Screen</a>
   </body>
 </html>
