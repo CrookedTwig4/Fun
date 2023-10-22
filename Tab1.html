@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    function checkWebsite2() {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'https://www.crookedtwig4.github.io/Fun/Tab2', true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+                if (xhr.status !== 200) {
+                    // Website 2 is not reachable, handle this situation
+                    // You can add more code here to attempt to open the other website
+                    // For security reasons, most modern browsers will prevent this automatically
+                    window.open("Tab2.html");
+                }
+            }
+        };
+        xhr.send();
+    }
+
+    // Check the status of Website 2 every 5 seconds
+    setInterval(checkWebsite2, 5000);
+</script>
+</head>
+<body>
+
+<h1>Welcome to Website 1</h1>
+
+</body>
+</html>
