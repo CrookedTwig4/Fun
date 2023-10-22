@@ -20,8 +20,8 @@
                 body: JSON.stringify(dataToSend)
             })
             .then(response => response.json())
-            .then(data => console.log('Data sent successfully:', data))
-            .catch(error => console.error('Error sending data:', error));
+            .then(data => alert('Data sent successfully:', data))
+            .catch(error => alert('Error sending data:', error));
         }
     </script>
 </body>
