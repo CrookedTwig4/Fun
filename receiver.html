@@ -20,14 +20,14 @@
 
         app.post('/your-endpoint', (req, res) => {
             const userInput = req.body.userInput;
-            console.log('User input received:', userInput);
+            alert('User input received:', userInput);
             // Add your logic to process the received user input here
 
             res.send('Data received successfully!');
         });
 
         app.listen(port, () => {
-            console.log(`Server is running at http://localhost:${port}`);
+            alert(`Server is running at http://localhost:${port}`);
         });
     </script>
 </body>
