@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Keyreader</title>
+</head>
+<body>
+    <input type="text" id="inputField">
+    <button onclick="sendData()">Send Data</button>
+
+    <script>
+        function sendData() {
+            const inputText = document.getElementById('inputField').value;
+            const dataToSend = { userInput: inputText };
+
+            fetch('http://www.example.com/your-endpoint', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(dataToSend)
+            })
+            .then(response => response.json())
+            .then(data => console.log('Data sent successfully:', data))
+            .catch(error => console.error('Error sending data:', error));
+        }
+    </script>
+</body>
+</html>
