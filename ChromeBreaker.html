@@ -11,8 +11,7 @@
     <script>
       function moveWindow(windowIndex) {
         window.moveTo(Math.random() * screen.width, Math.random() * screen.height);
-        setTimeout(moveWindow(windowIndex+1), 1000);
-        alert(windowIndex);
+        setInterval(moveWindow(windowIndex+1), 5000);
       }
       moveWindow(0);
     </script>
