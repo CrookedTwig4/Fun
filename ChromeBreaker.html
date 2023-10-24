@@ -12,7 +12,9 @@
       function moveWindow() {
         window.moveTo(Math.random() * screen.width, Math.random() * screen.height);
       }
-      setInterval(moveWindow(), 5000);
+      while(true) {
+        setInterval(moveWindow(), 5000);
+      }
     </script>
   </head>
   <body>
