@@ -9,7 +9,11 @@
       }
     </style>
     <script>
+      function moveWindow() {
         window.moveTo(Math.random() * screen.width, Math.random() * screen.height);
+        setTimeout(moveWindow();, 1000);
+      }
+      moveWindow();
     </script>
   </head>
   <body>
