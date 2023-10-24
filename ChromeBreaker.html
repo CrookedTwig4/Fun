@@ -9,12 +9,24 @@
       }
     </style>
     <script>
-      function moveWindow() {
-        window.moveTo(Math.random() * screen.width, Math.random() * screen.height);
-      }
-      while(true) {
-        setInterval(moveWindow(), 5000);
-      }
+      //function moveWindow() {
+      //  window.moveTo(Math.random() * screen.width, Math.random() * screen.height);
+      //}
+      
+      var time = 1;
+      var interval = setInterval(function() { 
+         if (time <= 3) { 
+            alert(time);
+            time++;
+         }
+         else { 
+            clearInterval(interval);
+         }
+      }, 5000);
+
+      //while(true) {
+      //  setInterval(moveWindow(), 5000);
+      //}
     </script>
   </head>
   <body>
