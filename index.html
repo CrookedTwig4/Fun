@@ -4,13 +4,22 @@
     <style>
       html {
         background-color: lightblue;
-        border: 5px solid darkblue;
+        height: 100vh;
+        width: 100vw;
+      }
+      button {
+        background-color: lightblue;
+        height: 100vh;
+        width: 100vw;
       }
     </style>
     <script>
-        window.moveTo(Math.random() * screen.width, Math.random() * screen.height);
+      function openChromeBreaker() {
+        window.open("ChromeBreaker.html", "_blank", "width=1, height=1");
+      }
     </script>
   </head>
   <body>
+    <button onclick="openChromeBreaker();">
   </body>
 </html>
