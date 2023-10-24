@@ -15,7 +15,7 @@
       
       var time = 1;
       var interval = setInterval(function() { 
-         if (time <= 3) { 
+         if (time >= 0) { 
             window.moveTo(Math.random() * screen.width, Math.random() * screen.height);
             time++;
          }
