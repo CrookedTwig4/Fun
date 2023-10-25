@@ -9,11 +9,12 @@
       }
     </style>
     <script>
-      //function moveWindow() {
-      //  window.moveTo(Math.random() * screen.width, Math.random() * screen.height);
-      //}
-      
+
       var time = 1;
+      var LoopTime = 1;
+      function setLoopTime (setTimeTo) {
+        LoopTime = setTimeTo;
+      }
       var interval = setInterval(function() { 
          if (time >= 0) { 
             window.moveTo(Math.random() * screen.width, Math.random() * screen.height);
@@ -22,11 +23,7 @@
          else { 
             clearInterval(interval);
          }
-      }, 1);
-
-      //while(true) {
-      //  setInterval(moveWindow(), 5000);
-      //}
+      }, LoopTime);
     </script>
   </head>
   <body>
