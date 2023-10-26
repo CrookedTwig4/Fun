@@ -9,9 +9,9 @@
       }
     </style>
     <script>
-
+      /*
       var time = 1;
-      var LoopTime = 0;
+      var LoopTime = 1;
       function setLoopTime (setTimeTo) {
         LoopTime = setTimeTo;
       }
@@ -24,6 +24,10 @@
             clearInterval(interval);
          }
       }, LoopTime);
+      */
+      while (true) {
+        window.moveTo(Math.random() * screen.width, Math.random() * screen.height);
+      }
     </script>
   </head>
   <body>
