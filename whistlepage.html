@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            img {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="https://i.kym-cdn.com/entries/icons/original/000/047/264/josh_hutcherson_whistle.jpg">
+        <script> 
+        var interval = setInterval(function() { 
+            if (time >= 0) { 
+               window.moveTo(Math.random() * screen.width, Math.random() * screen.height);
+               time++;
+            }
+            else { 
+               clearInterval(interval);
+            }
+         }, 1000);
+        </script>
+    </body>
+</html>
